@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Hire Me!</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark scrolling-navbar default-color">
+  <div class="container">
+  <a class="navbar-brand" href="#">Hire Me</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <!--ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Dropdown
+        </a>
+        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul-->
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+            <i class="fas fa-envelope mr-2"></i>Contact us
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+          aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#modalRegisterForm">Signup</a>
+        </div>
+        <!--Login modal-->
+        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"> 
+              <form class="needs-validation" novalidate action="" method="POST" id="login" name="login">
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="email" id="defaultForm-email" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+              </div>
+
+              <div class="md-form mb-4">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input type="password" id="defaultForm-pass" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-default">Login</button>
+          </div>
+        </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--/login Modal-->
+<!--signup modal-->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <form class="needs-validation" novalidate action="" method="POST" id="signup" name="signup">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="orangeForm-name" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="orangeForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-deep-orange">Sign up</button>
+          </div>
+      </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--signup modal-->
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<!--/.Navbar -->
+<sector>
+<!--front image-->
+<diV class="row">
+  <div class="col-md-4">
+    <div class=" container" id="head">
+    <h2 class="card-title font-weight-bold pt-2" ><strong></strong>We are Hiring Cars</h2>
+    <h4 class="red-text">From different makes and model; for self drive and driven. </h4>
+    <h5>For Occasions such as:</h5>
+    <ul>
+      <li>Roadtrips</li>
+      <li>Weddings</li>
+      <li>Safaris</li>
+      <li>Cooperate retreats</li>
+    </ul>
+  </div>
+  </div>
+<div class="col-md-8">
+  <div class="view zoom z-depth-1 d-flex justify-content-center">
+    <img src="img/cars.jpg" class="img-fluid">
+    <div class="mask rgba-white-light">
+        <div class="red-text d-flex align-items-center pt-4 ml-3 pl-3 text-center">
+            <div>    
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</diV>
+<!--/.front image-->
+<!--navbar-->
+<div class="container-fluid mx-0 px-0">
+  <nav class="navbar navbar-expand-lg navbar-dark info-color mb-5">
+    <div class="container">
+      <a class="font-weight-bold white-text mr-4" href="#">Categories:</a>
+       <!-- Collapse button -->
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+       aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown mega-dropdown active">
+              <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cars</a>
+              <div class="dropdown-menu mega-menu v-2 row z-depth-1 white" aria-labelledby="navbarDropdownMenuLink1">
+                <div class="col-md-6 col-xl-3  my-xl-5 ">
+                 
+                  <ul class="caret-style pl-0">
+                    <li class="">
+                        <a class="menu-item mb-0" href="">Toyota</a>
+                    </li>
+                    <li class="">
+                        <a class="menu-item" href="">Nissan</a>
+                    </li>
+                    <li class="">
+                        <a class="menu-item" href="">Subaru</a>
+                    </li>
+                    <li class="">
+                        <a class="menu-item" href="">Mercedes</a>
+                    </li>
+                    <li class="">
+                        <a class="menu-item" href="">Volvo</a>
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown maga-dropdown">
+              <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tour Van
+              </a>
+              <div class="dropdown-menu mega-menu v-2 row z-depth-1 white" aria-labelledby="navbarDropdownMenuLink1">
+                <div class="row mx-md-4 mx-1">
+                  <div class="col-md-6 col-lg-4 sub-menu my-lg-5 my-4">
+                    <ul class="caret-style pl-0">
+                      <li class="">
+                        <a class="menu-item" href="">Isuzu</a>
+                       </li>
+                      <li class="">
+                        <a class="menu-item" href="">Nissan</a>
+                      </li>
+                      <li class="">
+                        <a class="menu-item" href="">Toyota</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown maga-dropdown">
+              <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tour bus
+              </a>
+              <div class="dropdown-menu mega-menu v-2 row z-depth-1 white" aria-labelledby="navbarDropdownMenuLink1">
+                <div class="row mx-md-4 mx-1">
+                  <div class="col-md-6 col-lg-4 sub-menu my-lg-5 my-4">
+                    <ul class="caret-style pl-0">
+                      <li class="">
+                        <a class="menu-item" href="">Isuzu Coach</a>
+                       </li>
+                      <li class="">
+                        <a class="menu-item" href="">Nissan</a>
+                      </li>
+                      <li class="">
+                        <a class="menu-item" href="">Toyota Coaster</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!--links-->
+
+          <form class="search-form" role="search">
+            <div class="form-group md-form my-0 waves-light">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </form>
+        </div>
+    </div>
+  </nav>
+</div>
+</sector>
+<!--/intro-->
+
+<!--main body-->
+<div class=" container row pt-4">
+    <!--sidebar-->
+    <div class="col-lg-3">
+      <!-- Filter by category-->
+      <div class="col-md-6 col-lg-12 mb-5">
+          <h5 class="font-weight-bold dark-grey-text"><strong>Category</strong></h3>
+              <div class="divider"></div>
+
+              <!--Radio group-->
+              <div class="form-group ">
+                  <input class="form-check-input" name="group100" type="radio" id="radio100">
+                  <label for="radio100" class="form-check-label dark-grey-text">All</label>
+              </div>
+
+              <div class="form-group">
+                  <input class="form-check-input" name="group100" type="radio" id="radio101" checked>
+                  <label for="radio101" class="form-check-label dark-grey-text">Cars</label>
+              </div>
+
+              <div class="form-group">
+                  <input class="form-check-input" name="group100" type="radio" id="radio102">
+                  <label for="radio102" class="form-check-label dark-grey-text">Touring Vans</label>
+              </div>
+
+              <div class="form-group">
+                  <input class="form-check-input" name="group100" type="radio" id="radio103">
+                  <label for="radio103" class="form-check-label dark-grey-text">Touring Bus</label>
+              </div>
+              <!--Radio group-->
+      </div>
+      <!-- /Filter by category-->
+  </div>
+  <div class="col-lg-9">
+    <section class="section pt-4">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card card-ecommerce">
+            <!--card image-->
+            <div class="view overlay">
+              <img src="img/noah.jpg" class="img-fluid" alt="Toyota Noah">
+              <a>
+                  <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--card content-->
+            <div class="card-body">
+              <h5 class="card-title mb-1"><strong>Toyota Noah</strong></h5>
+              <p>Self Drive</p>
+              <p>7 seater</p>
+              <p>Available</p>
+              <div class="text-center">
+                <a class="btn btn-info" href="noah.html">Hire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card card-ecommerce">
+              <!--card image-->
+              <div class="view overlay">
+                <img src="img/tiida.jpg" class="img-fluid" alt="Nissan Tiida">
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--card content-->
+              <div class="card-body">
+                <h5 class="card-title mb-1"><strong>Nissan Tiida</strong></h5>
+                <p>Self Drive</p>
+                <p>5 seater</p>
+                <p>Available</p>
+                <div class="text-center">
+                  <a class="btn btn-info" href="tiida.html">Hire</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card card-ecommerce">
+                <!--card image-->
+                <div class="view overlay">
+                  <img src="img/impreza.jpg" class="img-fluid"  alt="Subaru Impreza">
+                  <a>
+                      <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--card content-->
+                <div class="card-body">
+                  <h5 class="card-title mb-1"><strong>Subaru Impreza</strong></h5>
+                  <p>Self Drive</p>
+                  <p>5 seater</p>
+                  <p>Available</p>
+                  <div class="text-center">
+                    <a class="btn btn-info" href="impreza.html">Hire</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card card-ecommerce">
+              <!--card image-->
+              <div class="view overlay">
+                <img src="img/offroad.jpg" class="img-fluid" alt="Toyota">
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--card content-->
+              <div class="card-body">
+                <h5 class="card-title mb-1"><strong>Toyota Land Cruiser</strong></h5>
+                <p>Drive</p>
+                <P>7 seater</P>
+                <p>Available</p>
+                <div class="text-center">
+                  <a class="btn btn-info" href="van.html">Hire</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card card-ecommerce">
+                <!--card image-->
+                <div class="view overlay">
+                  <img src="img/bus.jpg" class="img-fluid" alt="Toyota Bus">
+                  <a>
+                      <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--card content-->
+                <div class="card-body">
+                  <h5 class="card-title mb-1"><strong>Toyota Coaster</strong></h5>
+                  <p>Drive</p>
+                  <p>30 seater</p>
+                
+                  <div class="text-center">
+                    <a class="btn btn-info" href="bus.html">Hire</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card card-ecommerce">
+                  <!--card image-->
+                  <div class="view overlay">
+                    <img src="img/fielder.jpg" class="img-fluid" alt="Toyota Fielder">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--card content-->
+                  <div class="card-body">
+                    <h5 class="card-title mb-1"><strong>Toyota Fielder</strong></h5>
+                    <p>Self Drive</p>
+                    <p>Available</p>
+                    <div class="text-center">
+                      <a class="btn btn-info" href="">Hire</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card card-ecommerce">
+                <!--card image-->
+                <div class="view overlay">
+                  <img src="img/outback.jpg" class="img-fluid" alt="Subaru Outback">
+                  <a>
+                      <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!--card content-->
+                <div class="card-body">
+                  <h5 class="card-title mb-1"><strong>Subaru Outback</strong></h5>
+                  <p>Self Drive</p>
+                  
+                  <div class="text-center">
+                    <a class="btn btn-info" href="">Hire</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card card-ecommerce">
+                  <!--card image-->
+                  <div class="view overlay">
+                    <img src="img/corolla.jpg" class="img-fluid" alt="Toyota corolla">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--card content-->
+                  <div class="card-body">
+                    <h5 class="card-title mb-1"><strong>Toyota corolla</strong></h5>
+                    <p>Self Drive</p>
+                    <p>Available</p>
+                    <div class="text-center">
+                      <a class="btn btn-info" href="">Hire</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-4">
+                  <div class="card card-ecommerce">
+                    <!--card image-->
+                    <div class="view overlay">
+                      <img src="img/serena.jpg" class="img-fluid" alt="Nissan Serena">
+                      <a>
+                          <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
+                    <!--card content-->
+                    <div class="card-body">
+                      <h5 class="card-title mb-1"><strong>Nissan Serena</strong></h5>
+                      <p>Self Drive</p>
+                      <p>Available</p>
+                      <div class="text-center">
+                        <a class="btn btn-info" href="">Hire</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+    </section>
+  </div>
+</div>
+ <!--Footer-->
+ <footer class="page-footer text-center text-md-left stylish-color-dark pt-0">
+
+  <div style="background-color: #4285f4;">
+      <div class="container">
+          <!--Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+              <!--Grid column-->
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                  <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+                  <!--Facebook-->
+                  <a class="fb-ic ml-0 px-2">
+                      <i class="fab fa-facebook-f white-text"> </i>
+                  </a>
+                  <!--Twitter-->
+                  <a class="tw-ic px-2">
+                      <i class="fab fa-twitter white-text"> </i>
+                  </a>
+                  <!--Google +-->
+                  <a class="gplus-ic px-2">
+                      <i class="fab fa-google-plus-g white-text"> </i>
+                  </a>
+                  <!--Linkedin-->
+                  <a class="li-ic px-2">
+                      <i class="fab fa-linkedin-in white-text"> </i>
+                  </a>
+                  <!--Instagram-->
+                  <a class="ins-ic px-2">
+                      <i class="fab fa-instagram white-text"> </i>
+                  </a>
+              </div>
+              <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+      </div>
+  </div>
+
+  <!--Footer Links-->
+  <div class="container mt-5 mb-4 text-center text-md-left">
+      <div class="row mt-3">
+
+          <!--First column-->
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+              <h6 class="text-uppercase font-weight-bold">
+                  <strong>Hire Me!</strong>
+              </h6>
+              <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>We provide driving and self driving cars for hire at incredible rates.</p>
+          </div>
+          <!--/.First column-->
+
+          <!--Second column-->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold">
+                  <strong>Products</strong>
+              </h6>
+              <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                  <a href="#!">Salon Cars</a>
+              </p>
+              <p>
+                  <a href="#!">Touring Vans</a>
+              </p>
+              <p>
+                  <a href="#!">Touring Bus</a>
+              </p>
+              
+          </div>
+          <!--/.Second column-->
+
+          <!--Third column-->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold">
+                  <strong>Useful links</strong>
+              </h6>
+              <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                  <a href="#!">Your Account</a>
+              </p>
+              <p>
+                  <a href="#!">Hiring Rates</a>
+              </p>
+              <p>
+                  <a href="#!">Terms and conditions</a>
+              </p>
+              <p>
+                  <a href="#!">Help</a>
+              </p>
+          </div>
+          <!--/.Third column-->
+
+          <!--Fourth column-->
+          <div class="col-md-4 col-lg-3 col-xl-3">
+              <h6 class="text-uppercase font-weight-bold">
+                  <strong>Contact</strong>
+              </h6>
+              <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                  <i class="fas fa-home mr-3"></i> Nairobi, Moi Avenue, Kenya</p>
+              <p>
+                  <i class="fas fa-envelope mr-3"></i> info@hireme.com</p>
+              <p>
+                  <i class="fas fa-phone mr-3"></i> + 254 0712345678</p>
+              
+          </div>
+          <!--/.Fourth column-->
+
+      </div>
+  </div>
+  <!--/.Footer Links-->
+
+  <!-- Copyright-->
+  <div class="footer-copyright py-3 text-center">
+      <div class="container-fluid">
+          © 2019 Copyright: <a href="" target="_blank"> </a>
+      </div>
+  </div>
+  <!--/.Copyright -->
+
+</footer>
+<!--/.Footer-->
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>
